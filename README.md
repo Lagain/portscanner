@@ -1,12 +1,12 @@
 # Portscanner
 
-Portscanner searches for a port by scanning a range of IP addresses specified by the user. It returns a list of all IP addresses with the specified port open.
+Portscanner searches for a specific port by scanning a range of IP addresses given by the user. It returns a list of all IP addresses that have the specified port open.
 
 ### How it works:
 
 1. First nmap does a TCP scan on the starting IP address through the last IP address for a port specified by the user.
 
-2. Standard nmap output is sent to /dev/null to disappear.
+2. Standard nmap output is sent to /dev/null.
 
 3. Output of the scan is then sent to a file <em>Portscan</em> in a grep-able format.
 
